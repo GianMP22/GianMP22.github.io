@@ -1,5 +1,4 @@
 # GianMP22.github.io
-<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
