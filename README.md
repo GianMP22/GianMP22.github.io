@@ -5,7 +5,6 @@
 		<p>Useful Links:</p>
 	</head>
 	<body>
-		<p> Useful links: </p>
 		<ul>
 			<li> <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token">Visit Github: Creating a personal access token</a>
 			</li>
