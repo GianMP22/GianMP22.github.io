@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Gian'sReflection-AsWeMayThink/LongLivetheWeb</title>
+		<title>Useful Links:</title>
 	</head>
 	<body>
 		<p> Useful links: </p>
