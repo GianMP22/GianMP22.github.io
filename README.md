@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<p>Useful Links:</p>
+		<h1>Useful Links:</h1>
 	</head>
 	<body>
 		<ul>
