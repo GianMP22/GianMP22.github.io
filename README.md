@@ -15,16 +15,3 @@
 		</ul>
 	</body>
 </html>
-
-
-<!--
-  <p> Useful links: </p>
-  <ul>
-    <li> <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token">Visit Github: Creating a personal access token</a>
-   </li>
-   <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Visit Github HTML: HyperText Markup Language</a>
-   </li>
-    <li> <a href="https://github.com/IDMNYU/webDev_B_Fall2022/wiki">Visit Github IDM: WebDev_D_Fall2022/wiki</a>
-    </li>
-  </ul>
-  -->
