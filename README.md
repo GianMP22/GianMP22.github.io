@@ -12,8 +12,6 @@
 			</li>
 			<li> <a href= "https://github.com/IDMNYU/webDev_B_Fall2022/wiki"> Visit Github IDM: WebDev_D_Fall2022/wiki </a>
 			</li>
-			<li> <a href="https://mally.stanford.edu/~sr/computing/basic-unix.html"> UNIX commands for Mac Terminal </a>
-			</li>
 		</ul>
 	</body>
 </html>
