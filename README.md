@@ -4,7 +4,6 @@
 		<h1><a href="https://gianmp22.github.io/"> GianMP22.github.io </a></h1>
 	</head>
 	<head>
-		<meta charset="utf-8">
 		<h3>Useful Links:</h3>
 	</head>
 	<body>
