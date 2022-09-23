@@ -1,6 +1,6 @@
 <html>
+	<meta charset="utf-8">
 	<head>
-		<meta charset="utf-8">
 		<h1><a href="https://gianmp22.github.io/"> GianMP22.github.io </a></h1>
 	</head>
 	<head>
