@@ -1,12 +1,8 @@
-# GianMP22.github.io
 <html>
 	<head>
 		<meta charset="utf-8">
-		<h2>My Github Pages Site:</h2>
+		<h1><a href="https://gianmp22.github.io/"> GianMP22.github.io </a></h1>
 	</head>
-	<body>
-		<a href="https://gianmp22.github.io/"> GianMP22.github.io </a>
-	</body>
 	<head>
 		<meta charset="utf-8">
 		<h3>Useful Links:</h3>
