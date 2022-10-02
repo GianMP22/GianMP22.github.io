@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
 }
 
@@ -15,7 +15,10 @@ div {
 #text section {
     color: red;
     margin: 5px;
-    animation: fadeIn 5s;
+}
+
+#text :hover {
+    animation: fadeIn;
 }
 
 @keyframes fadeIn {
