@@ -3,9 +3,21 @@ body {
 }
 
 .text {
+    position: relative;
+    top: 30%;
+    opacity: 1;
+}
+
+.text section {
     color: rgb(255, 0, 0);
     font-size: 40px;
     text-align: center;
     padding: 100px;
 }
 
+.text p {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    padding: 100px;
+}
