@@ -3,9 +3,8 @@ body {
 }
 
 .text {
-    position: relative;
+    position: absolute;
     top: 30%;
-    opacity: 1;
 }
 
 .text section {
