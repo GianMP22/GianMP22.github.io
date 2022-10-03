@@ -1,22 +1,40 @@
 body {
-    background-color: black;
+    background: url("https://history.army.mil/art/Arlington/Images/MilFun.jpg") no-repeat center/cover;
+    display: flex;
+    background-attachment: fixed;
 }
 
 .text {
     position: absolute;
-    top: 30%;
+    top: 45%;
+    left: 5%;
+    background-image: linear-gradient(
+        transparent 40%,
+        currentColor 50%,
+        currentColor 70%,
+        transparent 83%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+
 }
 
 .text section {
-    color: rgb(255, 0, 0);
+    color: transparent;
     font-size: 40px;
     text-align: center;
-    padding: 100px;
+    padding-top: 100px;
+    padding-left: 25vw;;
+    padding-right: 25vw;
 }
 
 .text p {
-    color: rgb(255, 255, 255);
+    color: transparent;
     font-size: 40px;
     text-align: center;
-    padding: 100px;
+    padding-top: 100px;
+    padding-left: 25vw;
+    padding-right: 25vw;
 }
+
