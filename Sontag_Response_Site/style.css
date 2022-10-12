@@ -13,24 +13,37 @@ h1 {
     color: #EFCA57;
     font-family: 'Academy Engraved LET', sans-serif;
 }
+
+p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #EFCA57;
+    font-family: 'Academy Engraved LET', sans-serif;
+}
+
 .container {
     display: flex;
     flex-flow: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 .image {
     flex: 50%;
     margin-top: 10px;
-
+    background-clip: border-box;
+    background-color: antiquewhite;
     width: fit-content;
-    border-width: 60px;
+    border-width: 3vw;
     border-style: solid;
-    border-image: url(RrORbv-gold-frame-with-straight-lines-png-copy.png) 50 round;  
+    border-image: url(RrORbv-gold-frame-with-straight-lines-png-copy.png) 40 round;  
 }
-:root {
-    --lst: url="https://picsum.photos/v2/list";
-}
+
 .image img {
-    width: 40vw;
+    width: 91vw;
+    padding: 1vw;
 }
