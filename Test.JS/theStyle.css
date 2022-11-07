@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+main {
+    margin-bottom: 100vh;
+    background-color: whitesmoke;
+}
+
+h1 {
+    padding: 60px;
+    font-size: 60px;
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    border: 20px groove;
+  }
+  
