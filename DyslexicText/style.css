@@ -28,13 +28,22 @@ b {
 p {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     margin: auto;
     max-width: 60vw;
     font-size: 3vw;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
+    flex-wrap: wrap;
+    overflow-wrap: break-word; 
+
+}
+
+span {
+    display: inline;
+    font-weight: 400;
+
 }
 
 a {
