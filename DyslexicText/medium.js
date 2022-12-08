@@ -17,6 +17,9 @@ for (let i=0; i < paragraphs.length; i++) {
         if (words[j].length <= 3) {
             var chars = words[j].split('');
             let boldednum = 1;
+            if (chars.includes('-') || chars.includes('"')) {
+                boldednum+=1;
+            }
             chars.splice(boldednum, 0, "</span>");
         }
         // else if (words[j].length % 2 == 0) {
@@ -26,10 +29,22 @@ for (let i=0; i < paragraphs.length; i++) {
         else {
             var chars = words[j].split('');
             let boldednum = Math.round(chars.length / 2);
+            if(chars.includes(',', -1) || chars.includes('.', -1) || chars.includes(':') && (chars.length % 2 != 0) || chars.includes(';', -1) && (chars.length % 2 != 0) || chars.includes('?', -1) || chars.includes('!', -1) || chars.includes('"')) {
+                boldednum-=1;
+            }
+            if (chars.includes('-', 0) && !(chars.includes('-', -1))) {
+                boldednum+=1;
+            }
+            if (!(chars.includes('-', 0)) && chars.includes('-', -1)) {
+                boldednum-=1;
+            }
+            if (chars.includes('"')) {
+                boldednum+=1;
+            }
             chars.splice(boldednum, 0, "</span>");
         }
 
-        chars.splice(0, 0, "<span>");
+        chars.splice(0, 0, "<span id='outer'><span id='inner'>");
 
         array.push(chars);
     }
@@ -45,7 +60,7 @@ for (let i=0; i < paragraphs.length; i++) {
 
     console.log(wordarray);
 
-    const parray = wordarray.join('&nbsp;');
+    const parray = wordarray.join("&nbsp</span id='outer'>");
     console.log(parray[0]);
 
     paragraphs[i].innerHTML = parray
