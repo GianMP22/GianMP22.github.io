@@ -1,4 +1,5 @@
-// const dracTxt = document.DOCUMENT_TYPE_NODE("DyslexicText/Dracula- Chapter 1.webloc");
+// const dracTxt.load( "https://www.cs.cmu.edu/~rgs/drac-1.html" );
+// console.log("Drac Text:", draxTxt);
 
 let paragraphs = document.body.getElementsByTagName("p");
 
@@ -17,9 +18,17 @@ for (let i=0; i < paragraphs.length; i++) {
         if (words[j].length <= 3) {
             var chars = words[j].split('');
             let boldednum = 1;
-            if (chars.includes('-') || chars.includes('"')) {
-                boldednum+=1;
+            
+            // this whole section is accounting for the fact that my code doesn't know if a character is a letter or just punctuation
+            var add = 0;
+            for (let m = 0; m < chars.length; m++) {
+                if (chars[m] == '"') {
+                    add+=1;
+                }
             }
+
+            boldednum+=add;
+
             chars.splice(boldednum, 0, "</span>");
         }
         // else if (words[j].length % 2 == 0) {
@@ -29,18 +38,54 @@ for (let i=0; i < paragraphs.length; i++) {
         else {
             var chars = words[j].split('');
             let boldednum = Math.round(chars.length / 2);
-            if(chars.includes(',', -1) || chars.includes('.', -1) || chars.includes(':') && (chars.length % 2 != 0) || chars.includes(';', -1) && (chars.length % 2 != 0) || chars.includes('?', -1) || chars.includes('!', -1) || chars.includes('"')) {
-                boldednum-=1;
+            
+            // this whole section is accounting for the fact that my code doesn't know if a character is a letter or just punctuation
+            var sub = 0;
+            for (let m = 0; m < chars.length; m++) {
+                
+                if (chars[m] == ',' && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == '.' && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == ';' && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == '.' && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == '-' && m != 1 && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == '-' && m == 1 && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub-=2;
+                }
+                else if (chars[m] == ')' && chars.length != 8 && (chars.length % 2 != 0 || chars.length > 4)) {
+                    sub+=1;
+                }
+                // else if (chars[m] == '"' && (chars.length % 2 != 0 || chars.length >= 4)) {
+                //     sub+=1;
+                // }
+                else if (chars[m] == ':' && m == chars.length-1 && (chars.length % 2 != 0 || chars.length >= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == '?' && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == "'" && (chars.length % 2 != 0 || chars.length <= 4)) {
+                    sub+=1;
+                }
+                else if (chars[m] == "!" && (chars.length % 2 != 0 || m == chars.length - 2 || chars.length == 4)) {
+                    sub+=1;
+                }
+                
             }
-            if (chars.includes('-', 0) && !(chars.includes('-', -1))) {
-                boldednum+=1;
+            
+            if (sub < boldednum) {
+                boldednum -= sub;
             }
-            if (!(chars.includes('-', 0)) && chars.includes('-', -1)) {
-                boldednum-=1;
-            }
-            if (chars.includes('"')) {
-                boldednum+=1;
-            }
+            
             chars.splice(boldednum, 0, "</span>");
         }
 
@@ -60,7 +105,7 @@ for (let i=0; i < paragraphs.length; i++) {
 
     console.log(wordarray);
 
-    const parray = wordarray.join("&nbsp</span id='outer'>");
+    const parray = wordarray.join("&nbsp</span>");
     console.log(parray[0]);
 
     paragraphs[i].innerHTML = parray
