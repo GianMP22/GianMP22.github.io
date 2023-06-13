@@ -1,8 +1,12 @@
+body {
+    background-color: rgb(46,124,178);
+}
+
 
 main {
     display: flex;
     justify-content: center;
-    background-color: steelblue;
+    background-color: rgb(46,124,178);
     position:relative;
     z-index: 3;
     min-height: 100vh;
@@ -55,8 +59,10 @@ main {
     -moz-border-radius: 0 0 0 10px;
     -webkit-border-radius: 0 0 0 10px;
 
-    -webkit-box-shadow: -10px 0 0 0 steelblue;
-    box-shadow: -10px 0 0 0 steelblue;
+    -webkit-box-shadow: -10px 0 0 0 rgb(46,124,178);
+    box-shadow: -10px 0 0 0 rgb(46,124,178);
+    border-width: 1vw;
+    border-color: aqua;
 }
 .items:before {
     left: -20px;
@@ -65,25 +71,25 @@ main {
     -moz-border-radius: 0 0 10px 0;
     -webkit-border-radius: 0 0 10px 0;
 
-    -webkit-box-shadow: 10px 0 0 0 steelblue;
-    box-shadow: 10px 0 0 0 steelblue;
+    -webkit-box-shadow: 10px 0 0 0 rgb(46,124,178);
+    box-shadow: 10px 0 0 0 rgb(46,124,178);
+    border-width: 1vw;
+    border-color: aqua;
 }
 
 .logo {
     display: flex;
-    font-size: 2vw;
+    /* font-size: 3vw; */
     color: black;
     background-color: lightgray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     text-decoration: none;
     margin: 0vw;
-    padding: .5vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 3vw;
     align-self: flex-end;
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
     /* box-shadow: 5px 5px 5px black; */
 }
 .logo:before,
@@ -103,20 +109,20 @@ main {
     -moz-border-radius: 0 0 0 10px;
     -webkit-border-radius: 0 0 0 10px;
 
-    -webkit-box-shadow: -10px 0 0 0 steelblue;
-    box-shadow: -10px 0 0 0 steelblue;
+    -webkit-box-shadow: -10px 0 0 0 rgb(46,124,178);
+    box-shadow: -10px 0 0 0 rgb(46,124,178);
 }
 
 
 
 #curr {
-    background-color: steelblue;
+    background-color: rgb(46,124,178);
     box-shadow: 5px 2px 5px black; 
     position:relative;
     z-index:2;
 }
 #currlogo {
-    background-color: steelblue;
+    background-color: rgb(46,124,178);
     box-shadow: 5px 2px 5px black; 
     position:relative;
     z-index:2;
@@ -202,7 +208,7 @@ main {
 }
 
 img {
-    max-height: 3vw;
+    max-height: 8vw;
     background-color: white;
     padding: .3vw;
     border-radius: 1.8vw;
