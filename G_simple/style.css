@@ -6,7 +6,7 @@ body {
 .screen-border {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: lightgrey;
     overflow: hidden;
     padding: 5vw; /* Adjust the padding as needed */
@@ -16,7 +16,7 @@ body {
     position: relative;
     /* margin: 1vw; */
     width: 90vw; /* Adjust the width as needed */
-    height: 100vh; /* Adjust the height as needed */
+    height: auto; /* Adjust the height as needed */
     background-color: #fff;
     border: .2vw solid gray;
     border-radius: 1vw;
@@ -46,22 +46,95 @@ main {
 
 .item {
     display: flex;
-    /* justify-content: center; */
-    align-content: flex-start;
+    justify-content: center;
     margin: auto;
-    max-width: 60vw;
-    font-size: 3vw;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-
+    max-width: 70vw;
+    border-top: .2vw solid gray;
     font-weight: normal;
     flex-wrap: wrap;
 
 }
 
+h2 {
+    color: black;
+    font-size: 2.5vw;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 100;
+}
+
+b {
+    font-weight: 600;
+}
+
+.content {
+    display: none;
+    flex-flow: row;
+}
+
+.item.active .content {
+    display: flex;
+    flex-flow: row;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+.txt {
+    width: 30vw;
+    font-size: 2vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 1vw;
+    text-align: left;
+}
+
+.preview {
+    background-color: white;
+    /* cursor: pointer; */
+    border: none;
+    display: flex;
+    flex-flow: row;
+}
+
+button {
+    cursor: pointer;
+}
+
+.imgs {
+    display: block;
+    max-width: 30vw;
+    /* padding: 1vw; */
+    margin: 2vw;
+    border-radius: 2vw;
+    border: .2vw solid black;
+}
+
+/* main {
+    justify-content: center;
+    align-items: center;
+} */
+
+.page-link {
+    position: relative;
+    font-size: 2.5vw;
+    color: black;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    width: fit-content;
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 4vw;
+    border: .2vw solid black;
+    left: 25vw;
+}
+
 .menu-item {
     display: flex;
-    font-size: 3vw;
+    font-size: 2vw;
     color: black;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -101,7 +174,7 @@ main {
     content: url(images/G-logo2.github.png);
 }
 
-#page-overlay {
+#main-page-overlay {
     position: fixed;
     top: 0;
     left: -42vw; /* Start offscreen to the left */
@@ -112,18 +185,20 @@ main {
     margin: 1vw;
     border-radius: 2vw;
     transition: transform 0.5s;
-    z-index: 0;
+    z-index: 1000;
 }
+
   
-#page-overlay.active {
+  
+#main-page-overlay.active {
     transform: translateX(42vw); /* Slide in to cover a quarter of the screen */
 }
 
-#page-overlay #logo {
+#main-page-overlay #logo {
   transition: transform 0.5s;
 }
 
-#page-overlay.active #logo {
+#main-page-overlay.active #logo {
   transform: rotate(270deg); /* Move and rotate the logo along with the page */
 }
 
@@ -132,3 +207,24 @@ main {
     color: white;
     background-color: black;
 }
+
+.page-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    padding: 5vw; /* Adjust the padding as needed */
+    box-sizing: border-box;
+  }
+  
+.video {
+    border-radius: 2vw; /* Adjust the value as needed for desired roundness */
+    max-width: 70vw;
+    max-height: auto;
+}
+  
