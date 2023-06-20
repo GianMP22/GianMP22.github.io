@@ -97,6 +97,11 @@ b {
     border: none;
     display: flex;
     flex-flow: row;
+    border-radius: 1vw;
+}
+
+.preview:hover {
+    background-color: lightgray;
 }
 
 button {
