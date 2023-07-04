@@ -5,21 +5,26 @@ body {
 
 .screen-border {
     position: relative;
-    width: 100vw;
-    height: auto;
-    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 90vw;
+    min-height: 100vh;
+    background-color: black;
     overflow: hidden;
-    padding: 5vw; /* Adjust the padding as needed */
+    padding-left: 5vw; /* Adjust the padding as needed */
+    padding-right: 5vw;
   }
   
   .main-content {
     position: relative;
     /* margin: 1vw; */
+    /* top: -1vh; */
     width: 90vw; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
     background-color: #fff;
-    border: .2vw solid gray;
-    border-radius: 1vw;
+    /* border: .2vw solid gray; */
+    /* border-radius: 1vw; */
     z-index: 200;
   }
 
@@ -51,8 +56,8 @@ main {
     max-width: 70vw;
     border-top: .2vw solid gray;
     font-weight: normal;
-    flex-wrap: wrap;
-
+    flex-flow: column;
+    align-items: center;
 }
 
 h2 {
@@ -68,28 +73,53 @@ b {
 
 .content {
     display: none;
-    flex-flow: row;
+    flex-direction: column;
+    /* margin-top: 5vw; */
 }
 
 .item.active .content {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    width: 30vw;
+    font-size: 2vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 5vw;
 }
 
 .grid {
     display: flex;
     flex-direction: column;
-    padding: 3vw;
+    padding-top: 3vw;
 }
 
-.txt {
+
+.prev_txt {
     width: 30vw;
     font-size: 2vw;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    padding-right: 1vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     text-align: left;
 }
+
+.txt {
+    font-size: 1.5vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about {
+    font-size: 1.5vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin: 6vw;
+}
+
 
 .preview {
     background-color: white;
@@ -100,21 +130,48 @@ b {
     border-radius: 1vw;
 }
 
-.preview:hover {
-    background-color: lightgray;
+.arrow {
+    display: block;
+    transform: rotate(-90deg);
+    max-width: 5vw;
+    max-height: 5vw;
+    margin-bottom: 3vw;
+    margin-left: 46.2%;
+    margin-right: 46.2%;
+    border-radius: 3vw;
+    border: .2vw solid black;
+    cursor: pointer;
+    transition: transform 0.1s;
 }
+
+.arrow:hover {
+    content: url(images/G-logo2.github.png);
+}
+
+.arrow.active {
+    transform: rotate(0deg);
+  }
+  
 
 button {
     cursor: pointer;
 }
 
-.imgs {
+.prev_imgs {
     display: block;
     max-width: 30vw;
+    border-radius: 2vw;
+    border: .2vw solid black;
+}
+
+.imgs {
+    display: block;
+    max-width: 70vw;
     /* padding: 1vw; */
     margin: 2vw;
     border-radius: 2vw;
     border: .2vw solid black;
+    align-self: center;
 }
 
 /* main {
@@ -134,7 +191,9 @@ button {
     padding: 1vw;
     border-radius: 4vw;
     border: .2vw solid black;
-    left: 25vw;
+    /* left: 22.2vw; */
+    align-self: center;
+    margin-top: 2vw;
 }
 
 .menu-item {
@@ -166,29 +225,30 @@ button {
 #logo {
     position: relative;
     background-color: white;
-    left: 43vw;
-    top: 1vw;
-    border: .2vw solid black;
+    left: 35vw;
+    top: 7vw;
+    /* border: .2vw solid black; */
     padding-right: -0.5vw;
-    border-radius: 7vw;
+    border-radius: 8vw;
     max-height: 10vw;
     z-index: 1;
 }
 
 #logo:hover {
     content: url(images/G-logo2.github.png);
+    background-color: black;
 }
 
 #main-page-overlay {
     position: fixed;
-    top: 0;
-    left: -42vw; /* Start offscreen to the left */
+    top: -1vw;
+    left: -36vw; /* Start offscreen to the left */
     width: 40vw;
-    height: 90vh;
-    background-color: rgb(195, 194, 194);
-    border: .2vw solid rgb(111, 111, 111);
+    height: 100vh;
+    background-color: black;
+    /* border: .2vw solid rgb(111, 111, 111); */
     margin: 1vw;
-    border-radius: 2vw;
+    /* border-bottom-right-radius: 2vw; */
     transition: transform 0.5s;
     z-index: 1000;
 }
@@ -196,7 +256,7 @@ button {
   
   
 #main-page-overlay.active {
-    transform: translateX(42vw); /* Slide in to cover a quarter of the screen */
+    transform: translateX(35vw); /* Slide in to cover a quarter of the screen */
 }
 
 #main-page-overlay #logo {

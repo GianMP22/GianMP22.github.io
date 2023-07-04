@@ -7,7 +7,7 @@ const mainpageOverlay = document.getElementById('main-page-overlay');
 // pageOverlay.addEventListener('click', () => {
 //   pageOverlay.classList.toggle('active');
 // });
-var coll = document.getElementsByClassName("preview");
+const coll = document.getElementsByClassName("arrow");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -16,7 +16,7 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "flex") {
       content.style.display = "none";
-      content.style.flexFlow = "row";
+      // content.style.flexFlow = "row";
     } else {
       content.style.display = "flex";
     }
