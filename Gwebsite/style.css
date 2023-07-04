@@ -20,7 +20,7 @@ body {
     position: relative;
     /* margin: 1vw; */
     /* top: -1vh; */
-    width: 90vw; /* Adjust the width as needed */
+    width: 83vw; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
     background-color: #fff;
     /* border: .2vw solid gray; */
@@ -114,10 +114,13 @@ b {
     font-size: 1.5vw;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    padding: 5vw;
+    padding: 2vw;
     background-color: white;
     border-radius: 2vw;
-    margin: 6vw;
+    margin-right: 9vw;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    font-weight: 500;
 }
 
 
@@ -242,7 +245,7 @@ button {
 #main-page-overlay {
     position: fixed;
     top: -1vw;
-    left: -36vw; /* Start offscreen to the left */
+    left: -32.5vw; /* Start offscreen to the left */
     width: 40vw;
     height: 100vh;
     background-color: black;
@@ -256,7 +259,7 @@ button {
   
   
 #main-page-overlay.active {
-    transform: translateX(35vw); /* Slide in to cover a quarter of the screen */
+    transform: translateX(32vw); /* Slide in to cover a quarter of the screen */
 }
 
 #main-page-overlay #logo {
