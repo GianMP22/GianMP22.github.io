@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G Portfolio - Projects</title>
+        <!-- meta data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css"/>
+        <script type="module" src="medium.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div id="filter">
+                <div class="menu">
+                    <img src="images/Menu/SVG/G-Logo-B.svg" id="logo" alt="G Logo" width="50" height="50">
+                    <ul>
+                        <li><a href="index.html" style="color:slategray;">Projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <a class="menu-item" href="#" data-filter="all">All</a> -->
+                
+            </div>
+            <div class="main">
+                <div class="description">
+                    <h1>
+                        3D LEGO Manual:
+                            <br>
+                            AR & C4D
+                    </h1>
+                    <h3>#3D, #Renders, #SchoolProject</h3>
+                    <br>
+                    <h2>Problem statement:</h2>
+                    <p>LEGO manuals require a certain attention to detail in order to be followed correctly. Some of the older manuals are so hard to read, they are akin to those "spot the difference" games.</p>
+                    <div class="imgs-row">
+                        <img class="imgs" src="images/Projects/LegoManual/Instruction_Ex_01.jpg" alt="LEGO manual spot-the-difference example 01">
+                        <img class="imgs" src="images/Projects/LegoManual/Instruction_Ex_02.jpg" alt="LEGO manual spot-the-difference example 02">
+                    </div>
+                    
+                    <p>Some more recent adaptations of the LEGO manual have attemped to single out the location of certian pieces that the user may miss (shown below).</p>
+                    <img class="imgs" src="images/Projects/LegoManual/Instruction_Ex_03.jpg" alt="LEGO manual piece callout example ">
+                    <p>
+                        But this is the equivalent of putting baind-aid on a broken bone. It's not the ideal solution. The ideal solution for the instruction manual would be to create one with a closer visual design to the actual build process.
+                        <br><br>
+                        This is how I came up with the idea of a 3D animated version of the LEGO instruction manual. 
+                        <br>
+                        BONUS: I made it in AR too using the existing LEGO manual as an image tracker.
+                    </p>
+                    <br>
+                    
+                    <h2>Process:</h2>
+                    <p>My first step was to find a model to work off of. I went to the LEGO store and found a small Star Wars LEGO set to use as a reference.</p>
+                    <p>I used Fusion 360 to model each unique piece in the set to use in the animation.</p>
+                    <video width="480" height="270" controls>
+                        <source src="images/Projects/LegoManual/FusionModels_walkthru.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <p>Then I went over to Cinema 4D to create the animation and texture each piece to be rendered.</p>
+                    <video width="480" height="270" controls>
+                        <source src="images/Projects/LegoManual/Cinema4D_walkthru.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <br><br><br>
+
+                    <h2>C4D Rendered Animation:</h2>
+                    <p>On my first iteration I just focused on animating each step in a satisfying manner.</p>
+                    <video width="960" height="540" controls>
+                        <source src="images/Projects/LegoManual/Manual1+Music.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <p>For my second iteration I wanted to implement some elements of a traditional LEGO instruction manual that I had lost in the beginning. Plus I wanted to show off all the details of the pieces I modeled in my animation.</p>
+                    <video width="960" height="540" controls>
+                        <source src="images/Projects/LegoManual/NEW_Manual2_CompleteWithTurntables.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <br><br><br>
+
+                    <h2>AR Version:</h2>
+                    <p>This AR version was made with Snapchat's Lens Studio. But this lead to some problems.</p>
+                    <h3>Problems:</h3>
+                    <p>In a perfect world this AR version would track each page to their corresponding step. However, Lens Studio has a maximum of 10 image trackers which means I can only have a maximum of 10 steps - mine wouldn’t even load my 5th tracker (probably a file size issue). Therefore, I opted to track front page to a full animations of all steps.</p>
+                    <div class="imgs-row">
+                        <video width="360" height="640" controls>
+                            <source src="images/Projects/LegoManual/LegoARManualStitch.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <video width="360" height="640" controls>
+                            <source src="images/Projects/LegoManual/AR_LegoManual_StepbyStep.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>

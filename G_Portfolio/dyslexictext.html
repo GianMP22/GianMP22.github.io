@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G Portfolio - Projects</title>
+        <!-- meta data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css"/>
+        <script type="module" src="medium.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div id="filter">
+                <div class="menu">
+                    <img src="images/Menu/SVG/G-Logo-B.svg" id="logo" alt="G Logo" width="50" height="50">
+                    <ul>
+                        <li><a href="index.html" style="color:slategray;">Projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <a class="menu-item" href="#" data-filter="all">All</a> -->
+                
+            </div>
+            <div class="main">
+                <div class="description">
+                    <h1>
+                        Bionic reading method: <br> <b>Bo</b>ld <b>Beginn</b>ings
+                    </h1>
+                    <h3>#WebDesign, #SchoolProject</h3>
+                    <br>
+                    <a class="page-link" href="../DyslexicText/index.html">visit DyslexicText page</a>
+                    <img class="imgs" src="images/Projects/DyslexicText/InstaVid.gif" alt="instagram video inspiration">
+                    <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH1.png" alt="midpoint on paragraph with dyslexic font">
+                    <!-- <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH2.png" alt="paragraph illustrating dyslexic font">
+                    <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH3.png" alt="how the code works (incomplete)"> -->
+                    <p>Going through the paragraphs above helped me notice the patterns in the logic of this font. Let's take a look by reviewing words of n lengths (where n=number of characters in the word). 
+                        <!-- <br><br> Starting with single letter words (n=1):
+                        <br> The word "a" gets the one and only character bolded. Therefore if word.length == 1 then bold word[0]. -->
+                        <br><br> 
+                        All words with an even number of characters (n%2==0) get bolded at the halfway point. i.e. the word "with" has "wi" bolded and "th" unbolded.
+                        <br> 
+                        <br> 
+                        To make this logic into code:
+                        <br> 
+                        (let i=0; i&lt;word.length/2; i++) then bold word[i].
+                        <br> 
+                    </p>
+                    <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH4.png" alt="visual studio code">
+                    <p>
+                        I found on online resource with the entirety of the Dracula novel in html format (shown below). My plan was to link this website to my code to generate the text displayed on screen. 
+                        This way the text displayed can be changed simply by swapping the source link in the inspector to another page.
+                        <br><br>
+                        This would've worked great if there hadn't been typos in the Dracula html document which I was referencing. Therefore, I opted to just copy-paste the paragraphs myself directly into my html document. However, the text displayed can still be changed in inspector by just changing what is written under the paragraph tag.
+                    </p>
+                    <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH5.png" alt="html from dracula text">
+                    <img class="imgs" src="images/Projects/DyslexicText/Dyslexic_Font_PH6.png" alt="creating array from p element">
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>

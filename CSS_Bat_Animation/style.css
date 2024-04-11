@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bg-image{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    
+    width: 200vw;
+    animation: rotate 1s linear infinite;
+}
+
+.bat {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60vw;
+    z-index: 1;
+    animation: scale 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}

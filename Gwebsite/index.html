@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gian Morris-Perez</title>
+        <!-- meta data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css"/>
+        <link rel="icon" type="image/x-icon" href="images/G-logo.github.png">
+        <script src="medium.js" defer></script>
+    </head>
+    <body>
+        <div class="screen-border">
+            <div class="main-content">
+                <div id="menu">
+                    <!-- <a class="menu-item" href="#" data-filter="all">All</a> -->
+                    <a class="menu-item" href="#" data-filter="personal-projects">
+                        <span class="icon">+</span>
+                        Personal Projects
+                    </a>
+                    <a class="menu-item" href="#" data-filter="prototype">
+                        <span class="icon">+</span>
+                        Prototype
+                    </a>
+                    <a class="menu-item" href="#" data-filter="cad">
+                        <span class="icon">+</span>
+                        CAD
+                    </a>
+                    <a class="menu-item" href="#" data-filter="3D">
+                        <span class="icon">+</span>
+                        3D
+                    </a>
+                    <a class="menu-item" href="#" data-filter="solidworks">
+                        <span class="icon">+</span>
+                        Solidworks
+                    </a>
+                    <a class="menu-item" href="#" data-filter="graphic">
+                        <span class="icon">+</span>
+                        Graphic Design
+                    </a>
+                    <a class="menu-item" href="#" data-filter="renders">
+                        <span class="icon">+</span>
+                        Renders
+                    </a>
+                    <a class="menu-item" href="#" data-filter="prints">
+                        <span class="icon">+</span>
+                        3D Printing
+                    </a>
+                    <a class="menu-item" href="#" data-filter="web">
+                        <span class="icon">+</span>
+                        Web Design
+                    </a>
+                    <a class="menu-item" href="#" data-filter="audio">
+                        <span class="icon">+</span>
+                        Audio Design
+                    </a>
+                </div>
+                <div id="main-page-overlay">
+                    <img id="logo" src="images/G-logo.github.png" alt="Brand Logo: an on/off symbol turned 90 degrees clockwise to look like the capital letter G.">
+                    <img id="pfp" src="images/Headshot.png" alf="Headshot of me. Jewish/hispanic male presenting 21 year old in a black suit, white button down, and black tie with white stripes.">
+                    <p id="about">
+                        I am Gian Morris-Perez. <br>
+                        Your friendly neighborhood tinkerer. <br><br>
+                        I use my knowledge of 3D printing and 3D modeling combined with my skills in physical fabrication to transform ideas into high-fidelity prototypes. <br>
+                        While my talent exists in the physical world, my education is from NYU’s Engineering school, specifically in Media and Design; meaning I have skills in digital entertainment/design, as well as CAD and other methods of manufacturing.<br><br>
+                        I was inspired initially as a young boy to be an engineer by a character in a movie who used his engineering talents to fight crime. Then, in 2019 as I was graduating high school, I lost a twin sister who had always encouraged my engineering endeavors and my dreams of becoming an inventor. I continue to do this work because she believed in my talents.
+                    </p>
+                
+                </div>
+                
+                <div id="welcome">
+                    Welcome to my website!
+                </div>
+
+                <!-- item1 -->
+                <div class="item" data-tags="web">
+                    <div class="preview">
+                        <div class="prev_txt">
+                            <h2>
+                                Bionic reading method: <br> <b>Bo</b>ld <b>Beginn</b>ings
+                            </h2>
+                            <p>#WebDesign</p>
+                            <br>
+                        </div>
+                        <div class="grid">
+                            <a href="images/DyslexicText_Preview.png" target="_blank">
+                                <img class="prev_imgs" src="images/DyslexicText_Preview.png" alt="Preview of my Dyslexic Text website.">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="arrow" src="images/G-logo.github.png" alt="show-content button">
+                    <div class="content">
+                        <a class="page-link" href="../DyslexicText/index.html">visit DyslexicText page</a>
+                        <img class="imgs" src="images/Dyslexic_Font_PH1.png" alt="midpoint on paragraph with dyslexic font">
+                        <img class="imgs" src="images/Dyslexic_Font_PH2.png" alt="paragraph illustrating dyslexic font">
+                        <img class="imgs" src="images/Dyslexic_Font_PH3.png" alt="how the code works (incomplete)">
+                        <p class="txt">Going through the paragraphs above helped me notice the patterns in the logic of this font. Let's take a look by reviewing words of n lengths (where n=number of characters in the word). 
+                            <!-- <br><br> Starting with single letter words (n=1):
+                            <br> The word "a" gets the one and only character bolded. Therefore if word.length == 1 then bold word[0]. -->
+                            <br><br> 
+                            All words with an even number of characters (n%2==0) get bolded at the halfway point. i.e. the word "with" has "wi" bolded and "th" unbolded.
+                            <br> 
+                            <br> 
+                            To make this logic into code:
+                            <br> 
+                            (let i=0; i&lt;word.length/2; i++) then bold word[i].
+                            <br> 
+                        </p>
+                        <img class="imgs" src="images/Dyslexic_Font_PH4.png" alt="visual studio code">
+                        <img class="imgs" src="images/Dyslexic_Font_PH5.png" alt="html from dracula text">
+                        <img class="imgs" src="images/Dyslexic_Font_PH6.png" alt="creating array from p element">
+                    </div>
+                </div>
+                
+                <!-- item2 -->
+                <div class="item" data-tags="cad solidworks 3D renders">
+                    <div class="preview">
+                        <div class="grid">
+                            <a href="images/Bat.Render+Sim v25.png" target="_blank">
+                                <img class="prev_imgs" src="images/Bat.Render+Sim v25.png" alt="My CAD of Tim Burton's 1989 Batmobile render preview image.">
+                            </a>
+                        </div>
+                        <div class="prev_txt">
+                            <h2>
+                                NYU Advanced CAD class:
+                            </h2>
+                            <img class="logo_img" src="images/BATMOBILE.png" alt="BATMOBILE">
+                            <p>#CAD<br>#Solidworks<br>#Render<br>#3D</p>
+                            <br>
+                        </div>
+                    </div>
+                    <img class="arrow" src="images/G-logo.github.png" alt="show-content button">
+                    <div class="content">
+                        <p class="txt">
+                            This project 
+                        </p>
+                        <a href="images/Bat.Render+Sim v33.png" target="_blank">
+                            <img class="imgs" src="images/Bat.Render+Sim v33.png" alt="Batmobile 3/4 shot">
+                        </a>
+                        <img class="imgs" src="images/Bat.Render+Sim v34.png" alt="Batmobile top/side view">
+                        <img class="imgs" src="images/Dyslexic_Font_PH3.png" alt="how the code works (incomplete)">
+                        <img class="imgs" src="images/Dyslexic_Font_PH4.png" alt="visual studio code">
+                        <img class="imgs" src="images/Dyslexic_Font_PH5.png" alt="html from dracula text">
+                        <img class="imgs" src="images/Dyslexic_Font_PH6.png" alt="creating array from p element">
+                    </div>
+                </div>
+
+                <div class="item" data-tags="graphic prototype">
+                    <div class="preview">
+                        <div class="grid">
+                            <a href="images/Hotshot_Preview.webp" target="_blank">
+                                <img class="prev_imgs" src="images/Hotshot_Preview.webp" alt="Preview of my Cooper Union team's Hotshot Project.">
+                            </a>
+                        </div>
+                        <div class="prev_txt">
+                            <h2>
+                                Cooper Union STEM to STEAM:
+                            </h2>
+                            <img class="logo_img" src="images/Hotshot_Logo.png" alt="Hotshot team logo">
+                            <p>#GraphicDesign<br>#Prototype</p>
+                            <br>
+                        </div>
+                    </div>
+                    <img class="arrow" src="images/G-logo.github.png" alt="show-content button">
+                    <div class="content">
+                        <a class="page-link" href="https://hotshotcu.wixsite.com/hotshot">visit Hotshot Website</a>
+                        <p class="txt">
+                            
+                        </p>
+                    </div>
+                </div>
+                  
+                  
+                <div class="item" data-tags="projects models">
+                    <p>#PersonalProject</p>
+                    <p>#3Dmodel</p>
+                </div>
+                <div class="item" data-tags="models">
+                    <p>#3Dmodel</p>
+                </div>
+                <div class="item" data-tags="graphic">
+                    <p>#GraphicDesign</p>
+                </div>
+                <div class="item" data-tags="renders">
+                    <p>#Render</p>
+                </div>
+                <div class="item" data-tags="renders prints">
+                    <p>#3Dprint</p>
+                    <p>#Render</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

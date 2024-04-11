@@ -1,0 +1,335 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.screen-border {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 90vw; */
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    padding-left: 5vw; /* Adjust the padding as needed */
+    padding-right: 5vw;
+  }
+  
+  .main-content {
+    position: relative;
+    /* margin: 1vw; */
+    /* top: -1vh; */
+    width: 100vw; 
+    height: auto; 
+    background-color: #fff;
+    /* border: .2vw solid gray; */
+    /* border-radius: 1vw; */
+    z-index: 200;
+    text-align: center;
+  }
+
+#welcome {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    padding: 110px;
+}
+
+
+/* main {
+    margin-bottom: 10vw;
+} */
+
+#menu {
+    /* display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: auto;
+    /* margin-bottom: 6vw;
+    padding: 1vw;
+    padding-left: 8vw; */
+}
+
+.menu-item {
+    display: flex;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    width: fit-content;
+    text-decoration: none;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4vw;
+    border: 2px solid black;
+}
+
+.menu-item .icon {
+    display: inline-block;
+    /* margin-left: .5vw; */
+    margin-right: 5px;
+    transition: transform 0.3s;
+  }
+  
+.menu-item.active .icon {
+    transform: rotate(45deg);
+}
+
+
+/* .menu-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+} */
+
+.item {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    border-top: .2vw solid gray;
+    font-weight: normal;
+    flex-flow: column;
+    align-items: center;
+}
+
+h2 {
+    color: black;
+    font-size: 2.5vw;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 100;
+}
+
+b {
+    font-weight: 600;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+    /* margin-top: 5vw; */
+}
+
+.item.active .content {
+    display: flex;
+    flex-flow: column;
+    width: 30vw;
+    font-size: 2vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 5vw;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+}
+
+
+.prev_txt {
+    width: 30vw;
+    font-size: 2vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    text-align: left;
+}
+
+.txt {
+    font-size: 1.5vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about {
+    font-size: 1vw;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin-right: 9vw;
+    margin-left: -3vw;
+    margin-top: 1vw;
+    font-weight: 500;
+}
+
+#pfp {
+    display: block;
+    max-width: 15vw;
+    border-radius: 2vw;
+    /* margin-right: 9vw; */
+    margin-left: -3vw;
+    margin-top: -9vw;
+    background-color: white;
+}
+
+.preview {
+    background-color: white;
+    /* cursor: pointer; */
+    border: none;
+    display: flex;
+    flex-flow: row;
+    border-radius: 1vw;
+}
+
+.arrow {
+    display: block;
+    transform: rotate(-90deg);
+    max-width: 5vw;
+    max-height: 5vw;
+    margin-bottom: 3vw;
+    margin-left: 46.2%;
+    margin-right: 46.2%;
+    border-radius: 3vw;
+    border: .2vw solid black;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.arrow:hover {
+    content: url(images/G-logo2.github.png);
+    background-color: black;
+}
+
+.arrow.active {
+    transform: rotate(0deg);
+  }
+  
+
+button {
+    cursor: pointer;
+}
+
+.prev_imgs {
+    display: block;
+    max-width: 30vw;
+    border-radius: 2vw;
+    border: .2vw solid black;
+}
+
+
+.imgs {
+    display: block;
+    max-width: 70vw;
+    /* padding: 1vw; */
+    margin: 2vw;
+    border-radius: 2vw;
+    border: .2vw solid black;
+    align-self: center;
+}
+
+.logo_img {
+    display: block;
+    max-width: 25vw;
+    align-self: center;
+    margin-top: -2vw;
+}
+
+/* main {
+    justify-content: center;
+    align-items: center;
+} */
+
+.page-link {
+    position: relative;
+    font-size: 2.5vw;
+    color: black;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    width: fit-content;
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 4vw;
+    border: .2vw solid black;
+    /* left: 22.2vw; */
+    align-self: center;
+    margin-top: 2vw;
+}
+
+
+#logo {
+    position: relative;
+    background-color: white;
+    left: 35vw;
+    top: 5vw;
+    /* border: .2vw solid black; */
+    padding-right: -0.5vw;
+    border-radius: 8vw;
+    max-height: 10vw;
+    z-index: 1;
+}
+
+#logo:hover {
+    content: url(images/G-logo2.github.png);
+    background-color: black;
+}
+
+#main-page-overlay {
+    position: fixed;
+    top: -1vw;
+    left: -42.5vw; /* Start offscreen to the left */
+    width: 40vw;
+    height: 100vh;
+    background-color: black;
+    /* border: .2vw solid rgb(111, 111, 111); */
+    margin: 1vw;
+    padding-left: 10vw;
+    padding-top: 2vw;
+    /* border-bottom-right-radius: 2vw; */
+    transition: transform 0.5s;
+    z-index: 1000;
+}
+
+  
+  
+#main-page-overlay.active {
+    transform: translateX(45.7vw); /* Slide in to cover a quarter of the screen */
+}
+
+#main-page-overlay #logo {
+  transition: transform 0.5s;
+}
+
+#main-page-overlay.active #logo {
+  transform: rotate(270deg); /* Move and rotate the logo along with the page */
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: white;
+    background-color: black;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    padding: 5vw; /* Adjust the padding as needed */
+    box-sizing: border-box;
+  }
+  
+.video {
+    border-radius: 2vw; /* Adjust the value as needed for desired roundness */
+    max-width: 70vw;
+    max-height: auto;
+}
+  

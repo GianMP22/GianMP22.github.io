@@ -1,0 +1,49 @@
+body {
+    background-image: url("https://www.hollyhunt.com/sites/default/files/styles/square_1360/public/dam/files/350-08_AquaVelvetIII_ForestGreen_WM_2.jpg?itok=xyLNK_W3");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    font-size: 80px;
+    color: #EFCA57;
+    font-family: 'Academy Engraved LET', sans-serif;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #EFCA57;
+    font-family: 'Academy Engraved LET', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 50%;
+    margin-top: 10px;
+    background-clip: border-box;
+    background-color: antiquewhite;
+    width: fit-content;
+    border-width: 3vw;
+    border-style: solid;
+    border-image: url(RrORbv-gold-frame-with-straight-lines-png-copy.png) 40 round;  
+}
+
+.image img {
+    width: 91vw;
+    padding: 1vw;
+}
