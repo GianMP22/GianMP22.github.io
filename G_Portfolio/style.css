@@ -16,8 +16,10 @@ body {
 .prev_imgs {
   display: block;
   width: 340px;
+  height: 220px;
   padding: 10px;
   margin-bottom: -10px;
+  object-fit: cover;
 }
 
 h1 {
