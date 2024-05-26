@@ -19,3 +19,22 @@ menuItems.forEach(menuItem => {
       });
     });
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var loadingDiv = document.getElementById('loading');
+
+  // Show the loading div when the page is unloading
+  window.addEventListener('beforeunload', function() {
+      loadingDiv.style.display = 'flex';
+  });
+
+  // Hide the loading div after the entire page has loaded
+  window.onload = function() {
+      loadingDiv.style.display = 'none';
+  };
+});
+
+function showLoading() {
+    var loadingDiv = document.getElementById('loading');
+    loadingDiv.style.display = 'flex';
+}
