@@ -180,6 +180,11 @@ a:hover {
   flex-flow: row;
 }
 
+.imgs-column {
+  display: flex;
+  flex-flow: column;
+}
+
 video {
   padding: 10px;
 }
