@@ -244,12 +244,14 @@ iframe {
   align-self: center;
   justify-content: center;
   object-fit: cover;
+  min-width: 300px;
 }
 
 .imgs-row {
   display: flex;
   flex-flow: row;
   max-width: 75vw;
+  flex-wrap: wrap;
 }
 
 .imgs-column {
