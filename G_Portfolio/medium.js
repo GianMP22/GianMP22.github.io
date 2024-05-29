@@ -38,3 +38,18 @@ function showLoading() {
     var loadingDiv = document.getElementById('loading');
     loadingDiv.style.display = 'flex';
 }
+
+function adjustTitle() {
+  const titleElement = document.querySelector('.title');
+  if (window.innerWidth < 600) {
+      titleElement.innerHTML = "Gian's<br>Portfolio"; // Use innerHTML to include <br>
+  } else {
+      titleElement.innerHTML = "Gian Morris-Perez's Portfolio"; // Use innerHTML to include <br>
+  }
+}
+
+// Initial check
+adjustTitle();
+
+// Adjust title on window resize
+window.addEventListener('resize', adjustTitle);
