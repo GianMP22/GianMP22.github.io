@@ -162,6 +162,7 @@ ul {
   padding-right: 20px;
   text-align: right;
   white-space: nowrap;
+  padding-left: 8px;
 }
 
 a {
