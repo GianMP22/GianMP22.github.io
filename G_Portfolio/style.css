@@ -175,15 +175,23 @@ a:hover {
 }
 
 #logo {
-  min-width: 110px;
-  max-width: 110px;
+  width: 110px;
   height: auto;
-  padding-right: 30px;
+  padding-right: 25px;
+  padding-top: 5px;
   /* padding: 10px; */
   /* padding-left: 20px; */
   /* align-self: left; */
   /* background-color: whitesmoke;
   border-radius: 50px; */
+}
+
+#logoButton {
+  display: inline-block;
+}
+
+#logoButton:hover #logo {
+  content: url(images/Menu/SVG/G-Logo-alt.svg);
 }
 
 .project {
@@ -233,7 +241,7 @@ iframe {
   align-self: center;
   justify-content: center;
   object-fit: cover;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .imgs-in-row {
