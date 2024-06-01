@@ -54,19 +54,47 @@ adjustTitle();
 // Adjust title on window resize
 window.addEventListener('resize', adjustTitle);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const filterItems = document.querySelectorAll('.filter-item');
 
-  filterItems.forEach(item => {
-      item.addEventListener('click', (event) => {
-          event.preventDefault();
-          // Toggle active class on the clicked item
-          if (item.classList.contains('active')) {
-              item.classList.remove('active');
-          } else {
-              filterItems.forEach(i => i.classList.remove('active'));
-              item.classList.add('active');
-          }
+//menu filter mobile phone vs desktop issue
+document.addEventListener('DOMContentLoaded', () => {
+  const hoverSelectors = ['.filter-item', '.menu-item', '#logoButton', 'a']; // Add all selectors that use :hover
+
+  hoverSelectors.forEach(selector => {
+      const elements = document.querySelectorAll(selector);
+
+      elements.forEach(element => {
+          element.addEventListener('click', (event) => {
+              event.preventDefault();
+              // Toggle active class on the clicked element
+              if (element.classList.contains('active')) {
+                  element.classList.remove('active');
+              } else {
+                  elements.forEach(el => el.classList.remove('active'));
+                  element.classList.add('active');
+              }
+          });
+
+          element.addEventListener('touchstart', (event) => {
+              event.preventDefault();
+              if (element.classList.contains('active')) {
+                  element.classList.remove('active');
+              } else {
+                  elements.forEach(el => el.classList.remove('active'));
+                  element.classList.add('active');
+              }
+          });
       });
+  });
+
+  // Optional: Remove active class when clicking outside
+  document.addEventListener('click', (event) => {
+      const isHoverElement = hoverSelectors.some(selector => event.target.closest(selector));
+      if (!isHoverElement) {
+          hoverSelectors.forEach(selector => {
+              document.querySelectorAll(selector).forEach(element => {
+                  element.classList.remove('active');
+              });
+          });
+      }
   });
 });
