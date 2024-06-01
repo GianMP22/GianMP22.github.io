@@ -85,16 +85,4 @@ document.addEventListener('DOMContentLoaded', () => {
           });
       });
   });
-
-  // Optional: Remove active class when clicking outside
-  document.addEventListener('click', (event) => {
-      const isHoverElement = hoverSelectors.some(selector => event.target.closest(selector));
-      if (!isHoverElement) {
-          hoverSelectors.forEach(selector => {
-              document.querySelectorAll(selector).forEach(element => {
-                  element.classList.remove('active');
-              });
-          });
-      }
-  });
 });
