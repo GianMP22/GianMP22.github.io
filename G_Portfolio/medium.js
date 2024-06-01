@@ -66,21 +66,21 @@ document.addEventListener('DOMContentLoaded', () => {
           element.addEventListener('click', (event) => {
               event.preventDefault();
               // Toggle active class on the clicked element
-              if (element.classList.contains('active')) {
-                  element.classList.remove('active');
+              if (element.classList.contains('hover')) {
+                  element.classList.remove('hover');
               } else {
-                  elements.forEach(el => el.classList.remove('active'));
-                  element.classList.add('active');
+                  elements.forEach(el => el.classList.remove('hover'));
+                  element.classList.add('hover');
               }
           });
 
           element.addEventListener('touchstart', (event) => {
               event.preventDefault();
-              if (element.classList.contains('active')) {
-                  element.classList.remove('active');
+              if (element.classList.contains('hover')) {
+                  element.classList.remove('hover');
               } else {
-                  elements.forEach(el => el.classList.remove('active'));
-                  element.classList.add('active');
+                  elements.forEach(el => el.classList.remove('hover'));
+                  element.classList.add('hover');
               }
           });
       });
