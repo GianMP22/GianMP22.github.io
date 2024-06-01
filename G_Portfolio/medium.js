@@ -53,3 +53,20 @@ adjustTitle();
 
 // Adjust title on window resize
 window.addEventListener('resize', adjustTitle);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const filterItems = document.querySelectorAll('.filter-item');
+
+  filterItems.forEach(item => {
+      item.addEventListener('click', (event) => {
+          event.preventDefault();
+          // Toggle active class on the clicked item
+          if (item.classList.contains('active')) {
+              item.classList.remove('active');
+          } else {
+              filterItems.forEach(i => i.classList.remove('active'));
+              item.classList.add('active');
+          }
+      });
+  });
+});
