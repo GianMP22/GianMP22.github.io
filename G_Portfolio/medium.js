@@ -56,33 +56,33 @@ window.addEventListener('resize', adjustTitle);
 
 
 //menu filter mobile phone vs desktop issue
-document.addEventListener('DOMContentLoaded', () => {
-  const hoverSelectors = ['.filter-item', '.menu-item', '#logoButton', 'a']; // Add all selectors that use :hover
+// document.addEventListener('DOMContentLoaded', () => {
+//   const hoverSelectors = ['.filter-item', '.menu-item', '#logoButton', 'a']; // Add all selectors that use :hover
 
-  hoverSelectors.forEach(selector => {
-      const elements = document.querySelectorAll(selector);
+//   hoverSelectors.forEach(selector => {
+//       const elements = document.querySelectorAll(selector);
 
-      elements.forEach(element => {
-          element.addEventListener('click', (event) => {
-              event.preventDefault();
-              // Toggle active class on the clicked element
-              if (element.classList.contains('hover')) {
-                  element.classList.remove('hover');
-              } else {
-                  elements.forEach(el => el.classList.remove('hover'));
-                  element.classList.add('hover');
-              }
-          });
+//       elements.forEach(element => {
+//           element.addEventListener('click', (event) => {
+//               event.preventDefault();
+//               // Toggle active class on the clicked element
+//               if (element.classList.contains('hover')) {
+//                   element.classList.remove('hover');
+//               } else {
+//                   elements.forEach(el => el.classList.remove('hover'));
+//                   element.classList.add('hover');
+//               }
+//           });
 
-          element.addEventListener('touchstart', (event) => {
-              event.preventDefault();
-              if (element.classList.contains('hover')) {
-                  element.classList.remove('hover');
-              } else {
-                  elements.forEach(el => el.classList.remove('hover'));
-                  element.classList.add('hover');
-              }
-          });
-      });
-  });
-});
+//           element.addEventListener('touchstart', (event) => {
+//               event.preventDefault();
+//               if (element.classList.contains('hover')) {
+//                   element.classList.remove('hover');
+//               } else {
+//                   elements.forEach(el => el.classList.remove('hover'));
+//                   element.classList.add('hover');
+//               }
+//           });
+//       });
+//   });
+// });
