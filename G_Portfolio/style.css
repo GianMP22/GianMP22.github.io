@@ -149,7 +149,7 @@ p {
   transform: rotate(45deg);
 }
 
-/* .filter-item:hover, */
+.filter-item:hover,
 .filter-item.active {
     color: whitesmoke;
     background-color: slategrey;
@@ -173,10 +173,10 @@ a {
   font-size: 20px;
 }
 
-/* a:hover {
+a:hover {
   color: slategray;
   text-decoration: underline;
-} */
+}
 
 #logo {
   width: 110px;
@@ -194,9 +194,9 @@ a {
   display: inline-block;
 }
 
-/* #logoButton:hover #logo {
+#logoButton:hover #logo {
   content: url(images/Menu/SVG/G-Logo-alt.svg);
-} */
+}
 
 .project {
   width: 360px;
