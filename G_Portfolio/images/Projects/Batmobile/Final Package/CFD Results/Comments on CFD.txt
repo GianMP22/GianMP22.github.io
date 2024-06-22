@@ -1,0 +1,14 @@
+The front flow diagram shows that the wind speed over the top and upper sides of the batmobile
+is high, indicating low aerodynamic drag in these areas. By reducing the frictional loss
+due to contact with air particles, the batmobile is more fuel efficient and, more importantly, 
+able to convert more of its enginer power to forward movement. This will allow Batman to evade
+enemies with inferior automobiles. However, the sides of the car create drag as shown by the 
+yellow and green flow lines of slower moving air. The Batmobile could be better designed to
+minimise drag in these areas, perhaps by removing the side tubes. Finally, we note that air 
+speed under the car drops to almost zero - presumably due to friction with the ground. The 
+Batmobile fails to exploit ground effect, where fast moving aid under the car sucks the car to 
+the ground and thereby creates more downforce and allows for greater speeds. While this 
+improves the drivability of the Batmobile and eliminates the possibility of porpoising, 
+enemies may be able to exploit this deficiency and gain the advantage in a car chase. As is 
+seen in the steering wheel insignia, the Batmobile is created in Mercedes and is therefore
+accurate to the ability of F1 mercedes to successfully harness the power of ground effect.
