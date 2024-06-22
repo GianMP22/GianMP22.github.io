@@ -131,8 +131,8 @@ p {
     width: fit-content;
     white-space: nowrap;
     text-decoration: none;
-    margin: 13px;
-    padding: 8px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 20px;
     overflow: visible;
     /* border: 2px solid black; */
