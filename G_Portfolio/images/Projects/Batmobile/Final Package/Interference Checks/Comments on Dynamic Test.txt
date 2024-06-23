@@ -1,8 +1,0 @@
-In the video, the rack and pinion steering mechanism is taken 
-from its limit on one side to its limit at the other. As the video
-shows, once the tie rod hits the rack both contacting faces light up 
-and the motion stops. This occurs after approximately once full turn
-of the steering wheel, which corresponds to an angle of about 45 degrees
-either side of the neutral axis. We judge this to meet the expected
-turning requirements of the vehicle and deem the results of the test
-to be satisfactory. 
