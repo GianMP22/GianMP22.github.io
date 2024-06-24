@@ -81,7 +81,7 @@ p {
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  margin: 1vw;
+  /* margin: 1vw; */
   text-align: left;
 }
 
