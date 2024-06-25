@@ -275,20 +275,26 @@ iframe {
   flex-flow: column;
 }
 
+.contact-icon {
+  display: flex;
+  height: 20vw; /* Initial size of the icons */
+  min-width: 300px;
+  min-height: 300px;
+  transition: transform 0.3s ease; /* Smooth transition for the transform property */
+  padding: 3vw;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.contact-icon:hover {
+  transform: scale(1.2); /* Scale the icon to 120% on hover */
+}
+
 video {
   padding: 10px;
   border-radius: 0 0 20px 0;
   max-width: 75vw;
   height: auto;
-}
-
-.about-column {
-  display: flex;
-  flex-flow: column-reverse;
-  /* justify-content: space-between; */
-  padding-right: 40px;
-  max-width: 75vw;
-  padding-top: 60px;
 }
 
 #pfp {
