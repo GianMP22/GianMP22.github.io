@@ -228,7 +228,7 @@ a:hover {
   display: none;
 }
 
-iframe {
+.glb {
   display: flex;
   margin: 1vw;
   border-radius: 0 0 20px 0;
@@ -236,6 +236,7 @@ iframe {
   justify-content: center;
   /* object-fit: cover; */
   width: 70vw;
+  height: 30vw;
 }
 
 .imgs {

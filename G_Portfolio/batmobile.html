@@ -8,6 +8,7 @@
         <link rel = "stylesheet" href="style.css"/>
         <link rel="icon" type="image/x-icon" href="images/Projects/Batmobile/BatLogo.png">
         <script type="module" src="medium.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     </head>
     <body>
         <div id="loading" style="display: none;">
@@ -38,8 +39,14 @@
                     <p>I worked on this project in an advanced CAD class at NYU Tandon in collaboration with my fellow student Patrick Dowd. We split up the work based on skill and interest; I worked on the exterior form and wheels while Patrick worked on the interior drive train, engine turbine, and exhaust.</p>
                     <br>
                     <h2>3D Model:</h2>
-                    <iframe src="https://app.vectary.com/p/4kVWYAehPKht0TDK0WsrWG" frameborder="0" width="60vw" height="400"></iframe>
+                    <div class="imgs-column">
+                        <div class="imgs-row">
+                            <model-viewer class="glb" camera-controls touch-action="pan-y" auto-rotate environment-image="images/studio_small_09_2k.hdr" alt="A 3D model of the 1989 Batmobile" src="images/Projects/Batmobile/Batmobile'89.glb">
+                            </model-viewer>
+                        </div>
+                    </div>
                     <br>
+
                     <h2>Technical Drawings:</h2>
                     <p>Below are the technical drawings of some the parts I worked on. I also worked on the Bat-logo and the wheels (but I guess we neglected to make a technical drawing of the wheels).</p>
                     <div class="imgs-column">
