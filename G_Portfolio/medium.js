@@ -20,7 +20,8 @@ menuItems.forEach(menuItem => {
     });
   });
 
-document.addEventListener("DOMContentLoaded", function() {
+//LOADING DIV WAITING TILL PAGE HAS ACTUALLY LOADED - DOESNT SEEM TO QUITE WORK WITH VIDEOS AND GIFS
+  document.addEventListener("DOMContentLoaded", function() {
   var loadingDiv = document.getElementById('loading');
 
   // Show the loading div when the page is unloading
@@ -28,22 +29,36 @@ document.addEventListener("DOMContentLoaded", function() {
       loadingDiv.style.display = 'flex';
   });
 
-  // Hide the loading div after a fixed delay
-  setTimeout(function() {
-    loadingDiv.style.display = 'none';
-}, 3000); // 3000 milliseconds = 3 seconds
-});
 
   // Hide the loading div after the entire page has loaded
-//   window.onload = function() {
+  window.onload = function() {
+      loadingDiv.style.display = 'none';
+  };
+});
+function showLoading() {
+  var loadingDiv = document.getElementById('loading');
+  loadingDiv.style.display = 'flex';
+}
+
+//LOADING DIV FOR 3 SEC ALWAYS
+// document.addEventListener("DOMContentLoaded", function() {
+//   var loadingDiv = document.getElementById('loading');
+
+//   // Hide the loading div after a fixed delay
+//   setTimeout(function() {
 //       loadingDiv.style.display = 'none';
-//   };
+//   }, 3000); // 3000 milliseconds = 3 seconds
 // });
 
-function showLoading() {
-    var loadingDiv = document.getElementById('loading');
-    loadingDiv.style.display = 'flex';
-}
+// function showLoading() {
+//   var loadingDiv = document.getElementById('loading');
+//   loadingDiv.style.display = 'flex';
+
+//   // Hide the loading div after a fixed delay
+//   setTimeout(function() {
+//       loadingDiv.style.display = 'none';
+//   }, 3000); // 3000 milliseconds = 3 seconds
+// }
 
 function adjustTitle() {
   const titleElement = document.querySelector('.title');
