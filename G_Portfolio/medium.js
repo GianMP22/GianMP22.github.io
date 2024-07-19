@@ -28,11 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
       loadingDiv.style.display = 'flex';
   });
 
-  // Hide the loading div after the entire page has loaded
-  window.onload = function() {
-      loadingDiv.style.display = 'none';
-  };
+  // Hide the loading div after a fixed delay
+  setTimeout(function() {
+    loadingDiv.style.display = 'none';
+}, 3000); // 3000 milliseconds = 3 seconds
 });
+
+  // Hide the loading div after the entire page has loaded
+//   window.onload = function() {
+//       loadingDiv.style.display = 'none';
+//   };
+// });
 
 function showLoading() {
     var loadingDiv = document.getElementById('loading');
