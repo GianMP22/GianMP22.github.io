@@ -113,6 +113,7 @@ p {
   /* margin-left: -10px; */
   width: 100vw;
   justify-content: center;
+  z-index: 10;
 }
 
 #filterList {
@@ -230,14 +231,22 @@ a:hover {
 
 .glb {
   display: flex;
-  /* margin: 1vw; */
-  padding: 1vw;
+  margin: 1vw;
   border-radius: 0 0 20px 0;
+  background-color: slategray;
   align-self: center;
   justify-content: center;
   /* object-fit: cover; */
   width: 70vw;
   height: 30vw;
+}
+
+.annotation {
+  color: white;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .imgs {
