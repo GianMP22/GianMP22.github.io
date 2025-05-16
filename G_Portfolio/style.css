@@ -230,7 +230,8 @@ a:hover {
 
 .glb {
   display: flex;
-  margin: 1vw;
+  /* margin: 1vw; */
+  padding: 1vw;
   border-radius: 0 0 20px 0;
   align-self: center;
   justify-content: center;

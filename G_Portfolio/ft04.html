@@ -60,56 +60,64 @@
                     
 
                     <h2>Mechanism 01: Cartridge Ejection</h2>
-                    <p>I made the body of the flamethrower out of an aluminum casing I took off a plasma lighter. 
-                        The opening of the aluminum case was then widened out to match the size of the lighter cartridge. 
-                        This design decision means each lighter cartridge needs a gas lever bolted to the top in order to work with this prototype. 
-                        The addition of the gas lever to the lighters makes swapping cartridges really easy and fluid: 
-                        when one is empty, just pull the lever away from the case to remove the used cartridge and slip in a new one. 
-                    </p>
-                    <h2>Ignition:</h2>
                     <p>
-                        In this version, the ignition is activated by a push button just next to the gas release lever, 
-                        making the gas release & ignition operational in one move but allowing the user to move their finger away from the ignition button after the flame is produced without interfering with their pressure on the gas release lever.
-                        The circuitboard for the ignition as well as a safety switch (which disconnects the ignition from the 
-                        battery when the flamethrower is not in use) were both added to the back of the aluminum casing with 
-                        a 3D printed cover and an aluminum strip that matched the contour of the circuitboard.
+                        The first mechanism I focused on was the cartridge ejection. 
+                        I  spent a lot of time before I started thinking out how I wanted this to sound and feel for the user interacting with it. 
+                        I knew I wanted a pinch mechanism to release the lighter cartridge. 
+                        I also wanted the reload to be quick just in case the user found themself in a dangerous situation and needed more fuel than one cartridge could hold. 
+                        So I started with a lever and a spring.
                     </p>
-                    <h2>Inital Sketches:</h2>
+
                     <div class="imgs-column">
-                        <div class="imgs-row">
-                            <img class="imgs-in-row" src="images/Projects/FT03/Enclosure for Small Plasma PCB.jpg" alt="Sketch of enclosure for small plasma circuitboard.">
-                            <img class="imgs-in-row" src="images/Projects/FT03/Possible Trigger Mechanism.jpg" alt="Sketch of possible trigger mechanism.">
-                        </div>
+                        <model-viewer class="glb" camera-controls touch-action="pan-y" auto-rotate environment-image="images/studio_small_09_2k.hdr" alt="A 3D model of the test ejector" src="images/Projects/FT04/FT3_EjectorTest.glb">
+                        </model-viewer>
                     </div>
-                    <h2>Circuitboard Enclosure:</h2>
+                    <p>
+                        The body was designed to be bent on the thin bridges called living hinges (close to the center of the model) so that it could be 3D printed with no supports. 
+                        This saves on filament and print time. 
+                    </p>
+                    <p>
+                        After printing, the living hinges are bent 90° and bolted together as shown below.
+                    </p>
                     <div class="imgs-column">
                         <div class="imgs-row">
-                            <img class="imgs-in-row" src="images/Projects/FT03/IMG_4468.jpg" alt="Sketch of enclosure for small plasma circuitboard.">
-                            <img class="imgs-in-row" src="images/Projects/FT03/IMG_4462.jpg" alt="Sketch of possible trigger mechanism.">
-                        </div>
-                    </div>
-                    <br>
-                    <h2>Final Prototype:</h2>
-                    <div class="imgs-column">
-                        <div class="imgs-row">
-                            <video class="imgs-in-row" controls muted autoplay loop>
-                                <source src="images/Projects/FT03/IMG_2225 3.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <img class="imgs-in-row" src="images/Projects/FT03/IMG_3177 2.jpg" alt="Final product picture 1.">
-                            <video class="imgs" style="width: 72.5vw;" controls autoplay loop muted>
-                                <source src="images/Projects/FT03/IMG_8157 2.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <video class="imgs" style="width: 72.5vw;" controls loop>
-                                <source src="images/Projects/FT03/IMG_4491.MOV" type="video/mp4">
+                            <a href="images/Projects/FT04/IMG_2368.jpg" target="_blank">
+                                <img class="imgs-in-row" src="images/Projects/FT04/IMG_2368.jpg" alt="Test ejector prototype front view.">
+                            </a>
+                            <a href="images/Projects/FT04/IMG_2369.jpg" target="_blank">
+                                <img class="imgs-in-row" src="images/Projects/FT04/IMG_2369.jpg" alt="Test ejector prototype side view.">
+                            </a>
+                            <a href="images/Projects/FT04/IMG_2370.jpg" target="_blank">
+                                <img class="imgs-in-row" src="images/Projects/FT04/IMG_2370.jpg" alt="Test ejector prototype 3/4 view.">
+                            </a>
+                            <video class="imgs-in-row" controls>
+                                <source src="images/Projects/FT04/video-251_singular_display 2.mov" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
 
                     <br>
+                    <h2>Mechanism 02: Ignition Circuit Board</h2>
+                    <p>
+                        Another integral piece to this project’s functionality is the ignition; you can’t have fire without the spark. 
+                        For this piece, I knew I wanted to activate the ignition with a slide switch. 
+                        One of the problems of my last mini flamethrower was ease and control over the ignition. 
+                        After 1 failed attempt at making this by trying to bolt the PCB on the side of the body, 
+                        I decided to ditch the screws and lock it in utilizing the symmetry of the two halves of the body. 
+                    </p>
+                    <div class="imgs-column">
+                        <div class="imgs-row">
+                            <model-viewer class="glb" style="width: 36vw; min-width: 300px;" camera-controls touch-action="pan-y" auto-rotate environment-image="images/studio_small_09_2k.hdr" alt="A 3D model of the test ejector" src="images/Projects/FT04/FT_FailedDovetailTest.glb">
+                            </model-viewer>
+                            <model-viewer class="glb" style="width: 36vw; min-width: 300px;" camera-controls touch-action="pan-y" auto-rotate environment-image="images/studio_small_09_2k.hdr" alt="A 3D model of the test ejector" src="images/Projects/FT04/FT3_Mechanism2.glb">
+                            </model-viewer>
+                        </div>
+                    </div>
+                    
+                    
                     <br>
+                    <br>                    
 
                     <h1 style="text-align: center;" >Similar Projects:</h1>
                 </div>
@@ -162,19 +170,22 @@
                         </div>
 
                         <div class="project" data-tags="prototype prints cad personal-projects">
-                            <a href="images/Projects/FT04/FT04_Prev.png" target="_blank">
-                                <img class="prev_imgs" src="images/Projects/FT04/FT04_Prev.png" alt="Preview of my fourth 3D printed hand-held flamethrower." width="200" >
+                            <a href="images/Projects/FT03/Ft03_Prev.png" target="_blank">
+                                <img class="prev_imgs" src="images/Projects/FT03/Ft03_Prev.png" alt="Preview of my third 3D printed hand-held flamethrower." width="200" >
                             </a>
                             <a href="ft03.html" target="_self">
                                 <h2>
-                                    Mini Flamethrower MK4: Hand-Held
-                                    <br>
-                                    Fusion 360
+                                    Mini Flamethrower MK3: Hand-Held
+                                    <br><br>
                                 </h2>
                             </a>
                             <h3>#Prototype, #3Dprint, #CAD, #PersonalProject</h3>
                             <br>
-                            <p>This project...</p>
+                            <p>This flamethrower was the best working version...while it was actually working. 
+                                This prototype was an experiment on how small I could make the flamethrower and still have all the functionality I wanted. 
+                                I also decided to make it hand-held to make it safer to use. 
+                                Although nice and portable, the small size made it extremely fragile.
+                            </p>
                         </div>
 
                         <div class="project" data-tags="prototype prints cad personal-projects">
