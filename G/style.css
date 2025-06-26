@@ -31,7 +31,8 @@ body {
 .button:hover {
     /* color: whitesmoke;
     background-color: black; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: 400;
     box-shadow: none;
     cursor: pointer;
 }
